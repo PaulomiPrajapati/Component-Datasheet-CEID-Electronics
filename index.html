@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My CSV Editor</title>
+</head>
+<body>
+  <h1>Editable Table</h1>
+  <div id="editor"></div>
+  <a id="download" href="#">Download CSV</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script type="module">
+    import SimpleCsvEditor from 'https://cdn.jsdelivr.net/gh/dag0310/simple-csv-editor/src/simple-csv-editor.js';
+
+    async function init() {
+      const csvText = await fetch('Spare Components list 2025.csv').then(r => r.text());
+      const editor = new SimpleCsvEditor({
+        id: 'editor',
+        data: csvText,
+        onChange: csv => currentCsv = csv
+      });
+      let currentCsv = csvText;
+
+      document.getElementById('download').onclick = () => {
+        const blob = new Blob([currentCsv], {type:'text/csv'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = 'Spare Components list 2025.csv';
+        a.click();
+      };
+    }
+    init();
+  </script>
+</body>
+</html>
