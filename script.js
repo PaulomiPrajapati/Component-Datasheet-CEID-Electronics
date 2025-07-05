@@ -1,64 +1,58 @@
 let data = [];
 
-// Load CSV
+// Load CSV (URL-encoded spaces)
 fetch('Spare%20Components%20list%202025.csv')
   .then(r => r.text())
-  .then(csv => data = Papa.parse(csv.trim(), { header: true }).data);
+  .then(csv => {
+    data = Papa.parse(csv.trim(), { header: true }).data;
+  });
 
-// Search input
-document.getElementById('search').addEventListener('input', () => {
-  const q = document.getElementById('search').value.toLowerCase().trim();
-  const filtered = data.filter(r =>
-    Object.values(r).some(v => v && v.toLowerCase().includes(q))
-  );
-  renderTable(filtered);
+const searchEl = document.getElementById('search');
+const resultsEl = document.getElementById('results');
+
+searchEl.addEventListener('input', () => {
+  const q = searchEl.value.toLowerCase().trim();
+  const matches = q
+    ? data.filter(r => Object.values(r).some(v => v && v.toLowerCase().includes(q)))
+    : [];
+  renderCards(matches);
 });
 
-// Clear search button
 document.querySelector('.clear-btn').addEventListener('click', () => {
-  document.getElementById('search').value = '';
-  document.getElementById('search').dispatchEvent(new Event('input'));
+  searchEl.value = '';
+  renderCards([]);
 });
 
-// Render rows
-function renderTable(rows) {
-  const tbl = document.getElementById('results');
-  const thead = document.getElementById('header-row');
-  const tbody = document.getElementById('body-rows');
-  tbody.innerHTML = '';
+function renderCards(list) {
+  resultsEl.innerHTML = '';
+  list.forEach(obj => {
+    const card = document.createElement('div');
+    card.className = 'card';
 
-  if (rows.length === 0) {
-    tbl.style.display = 'none';
-    return;
-  }
-  tbl.style.display = 'table';
+    const keys = Object.keys(obj);
+    if (keys.length) {
+      const legend = document.createElement('legend');
+      legend.textContent = obj[keys[0]] || '—';
+      card.appendChild(legend);
+    }
 
-  // Setup header once
-  if (!thead.hasChildNodes()) {
-    Object.keys(rows[0]).forEach(col => {
-      const th = document.createElement('th');
-      th.innerText = col;
-      thead.appendChild(th);
+    keys.forEach(k => {
+      if (k === keys[0]) return;
+      const p = document.createElement('p');
+      p.innerHTML = `<span class="key">${k}:</span> <span class="value" contenteditable>${obj[k] || ''}</span>`;
+      p.querySelector('.value').addEventListener('blur', e => {
+        obj[k] = e.target.innerText;
+      });
+      card.appendChild(p);
     });
-  }
-
-  rows.forEach(r => {
-    const tr = document.createElement('tr');
-    Object.entries(r).forEach(([key, val]) => {
-      const td = document.createElement('td');
-      td.innerText = val || '';
-      td.contentEditable = true;
-      td.addEventListener('blur', () => r[key] = td.innerText);
-      tr.appendChild(td);
-    });
-    tbody.appendChild(tr);
+    resultsEl.appendChild(card);
   });
 }
 
-// Add new blank row
 document.getElementById('add-row').addEventListener('click', () => {
-  if (!data.length) return alert('Please wait — loading data');
+  if (!data.length) return alert('Please wait—data is loading');
   const blank = Object.fromEntries(Object.keys(data[0]).map(k => [k, '']));
-  data.push(blank);
-  renderTable([blank]);
+  data.unshift(blank);
+  renderCards([blank]);
+  searchEl.value = '';
 });
