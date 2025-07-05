@@ -1,23 +1,36 @@
-/* Background: navy gradient */
+/* Background: soft lavender gradient */
 html, body {
-  margin: 0; padding: 0; height: 100%;
-  background: linear-gradient(135deg, #0f1c3f, #1e2766);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(145deg, #f0f4ff, #e6eaf5);
   font-family: 'Poppins', sans-serif;
-  color: white;
+  color: #2c3e50;
 }
 
 .main-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
-/* Centered search bar */
+/* Page Title */
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #3e4c66;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Search bar row */
 .search-row {
   display: flex;
   gap: 12px;
   align-items: center;
+  justify-content: center;
 }
 
 #search {
@@ -25,54 +38,54 @@ html, body {
   max-width: 80vw;
   padding: 14px 24px;
   border-radius: 30px;
-  border: none;
+  border: 1px solid #ccc;
   font-size: 1rem;
-  color: #1a202c;
-  background: #e2e8f0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: width 0.3s ease;
+  color: #2c3e50;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
 #search:focus {
   outline: none;
   width: 420px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  border-color: #8b9dc3;
+  box-shadow: 0 6px 18px rgba(139, 157, 195, 0.2);
 }
 
 .btn-add {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #ff6f61;
+  background: #6c63ff;
   color: white;
   border: none;
   font-size: 1.6rem;
   cursor: pointer;
-  animation: pulse 2s infinite ease-in-out;
+  transition: background 0.3s ease;
 }
 
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.08); }
+.btn-add:hover {
+  background: #574fd6;
 }
 
-/* Results area */
+/* Results container */
 #results {
   margin-top: 40px;
   width: 90%;
   max-width: 600px;
 }
 
-/* Card: transparent with glass look */
+/* Card: subtle frosted glass style */
 .card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  color: #2c3e50;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   animation: fadeInUp 0.4s ease forwards;
   opacity: 0;
   transform: translateY(10px);
@@ -89,12 +102,12 @@ html, body {
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #a0c4ff;
+  color: #495e94;
 }
 
 .card .key {
   font-weight: 500;
-  color: #7dd3fc;
+  color: #6c63ff;
 }
 
 .card p {
@@ -103,39 +116,40 @@ html, body {
 }
 
 .card a {
-  color: #63b3ed;
+  color: #5761c7;
   text-decoration: underline;
 }
 
 .card a:hover {
-  color: #90cdf4;
+  color: #818cf8;
 }
 
-/* Modal styling */
+/* Modal overlay */
 .modal-overlay {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
   z-index: 10;
 }
 
 .modal {
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
+  background: rgba(255, 255, 255, 0.85);
+  color: #2c3e50;
   backdrop-filter: blur(15px);
   border-radius: 14px;
   padding: 24px;
   width: 320px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .modal h4 {
   margin-top: 0;
   font-size: 1.2rem;
   margin-bottom: 12px;
+  color: #3e4c66;
 }
 
 .modal ul {
@@ -147,21 +161,39 @@ html, body {
   padding: 8px;
   margin: 4px 0;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.08);
+  background: #eef1fb;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .modal ul li:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: #dce3f7;
 }
 
 .btn-close {
   margin-top: 14px;
   padding: 8px 14px;
-  background: #ffffff20;
-  color: white;
-  border: 1px solid #fff3;
+  background: #d3d9f0;
+  color: #2c3e50;
+  border: 1px solid #aab4d4;
   border-radius: 6px;
   cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 1.6rem;
+  }
+
+  #search {
+    width: 90vw;
+    font-size: 1rem;
+  }
+
+  .btn-add {
+    width: 44px;
+    height: 44px;
+    font-size: 1.4rem;
+  }
 }
