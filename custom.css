@@ -1,36 +1,32 @@
-/* Container & body */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background: #fafafa;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e6f3ff; /* soft light blue */
   margin: 0;
   color: #333;
 }
 
-/* Search wrapper */
 .search-wrapper {
   max-width: 600px;
   margin: 80px auto 20px;
   position: relative;
 }
 
-/* Search input */
 #search {
   width: 100%;
   padding: 14px 20px;
   border: none;
-  background: #f0f0f0;
-  border-radius: 30px;
-  font-size: 1rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  transition: background .3s, box-shadow .3s;
-}
-#search:focus {
   background: #fff;
-  outline: none;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 40px;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: box-shadow .3s;
 }
 
-/* Clear button */
+#search:focus {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 .clear-btn {
   position: absolute;
   right: 18px;
@@ -38,64 +34,76 @@ body {
   transform: translateY(-50%);
   border: none;
   background: transparent;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
   opacity: 0.5;
 }
-.clear-btn:hover { opacity: 1; }
 
-/* Hide table at load */
+.clear-btn:hover {
+  opacity: 1;
+}
+
 #results {
   max-width: 600px;
-  margin: 0 auto;
-  display: none;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 6px;
-  padding: 0;
+  margin: 0 auto 100px;
 }
 
-/* Row look */
-#body-rows tr {
-  display: flex;
-  justify-content: space-between;
-  padding: 14px 20px;
-  margin-bottom: 6px;
+.card {
   background: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   transition: background .2s;
-}
-#body-rows tr:hover {
-  background: #f5faff;
+  position: relative;
 }
 
-/* Cell layout */
-#body-rows td {
-  flex: 1;
+.card:hover {
+  background: #f0faff;
+}
+
+.card fieldset {
+  margin: 0;
   padding: 0;
   border: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
-/* Floating "Add" button */
+.card legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.card p span.key {
+  font-weight: 600;
+  color: #0056b3;
+}
+
+.clear-input {
+  clear: both;
+}
+
 .add-btn {
   position: fixed;
   bottom: 40px;
   right: 40px;
   background: #0056b3;
   color: #fff;
-  font-size: 1.5rem;
-  width: 56px;
-  height: 56px;
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
   border: none;
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   cursor: pointer;
   transition: background .3s, box-shadow .3s;
 }
+
 .add-btn:hover {
   background: #0041a8;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
