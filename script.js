@@ -1,51 +1,39 @@
 let data = [];
 
-// Load CSV (with spaces encoded)
-fetch('Spare%20Components%20list%202025.csv')
-  .then(r => r.text())
-  .then(csv => data = Papa.parse(csv.trim(), { header: true }).data);
+// Function to fetch & parse a CSV; returns Promise of array of objects
+function loadCSV(path) {
+  return Papa.parse(path, {
+    download: true,
+    header: true,
+    skipEmptyLines: true,
+    complete: res => {},
+  }).then(res => res.data);
+}
+
+// List all your CSV filenames (URL‑encoded if spaces)
+const files = [
+  'Components.csv',
+  'Spare%20Components%20list%202025.csv',
+  'SMD%20Components.csv',
+  'Box%20in%20Cupboard.csv'
+];
+
+Promise.all(files.map(loadCSV))
+  .then(results => {
+    // Merge all parsed CSV data arrays into one
+    data = results.flat();
+  })
+  .catch(err => console.error('Error loading CSVs:', err));
 
 const searchEl = document.getElementById('search');
 const resultsEl = document.getElementById('results');
 
 searchEl.addEventListener('input', () => {
   const q = searchEl.value.toLowerCase().trim();
-  const matches = q
-    ? data.filter(r => Object.values(r).some(v => v && v.toLowerCase().includes(q)))
+  const matches = q 
+    ? data.filter(r =>
+        Object.values(r).some(v => v && v.toLowerCase().includes(q))
+      )
     : [];
   renderCards(matches);
-});
-
-function renderCards(list) {
-  resultsEl.innerHTML = '';
-  list.forEach(obj => {
-    const card = document.createElement('div');
-    card.className = 'card';
-
-    const keys = Object.keys(obj);
-    if (keys.length) {
-      const legend = document.createElement('legend');
-      legend.textContent = obj[keys[0]] || '—';
-      card.appendChild(legend);
-    }
-
-    keys.forEach(k => {
-      if (k === keys[0]) return;
-      const p = document.createElement('p');
-      p.innerHTML = `<span class="key">${k}:</span> <span class="value" contenteditable>${obj[k] || ''}</span>`;
-      p.querySelector('.value').addEventListener('blur', e => {
-        obj[k] = e.target.innerText;
-      });
-      card.appendChild(p);
-    });
-    resultsEl.appendChild(card);
-  });
-}
-
-document.getElementById('add-row').addEventListener('click', () => {
-  if (!data.length) return alert('Please wait—data is loading');
-  const blank = Object.fromEntries(Object.keys(data[0]).map(k => [k, '']));
-  data.unshift(blank);
-  renderCards([blank]);
-  searchEl.value = '';
 });
