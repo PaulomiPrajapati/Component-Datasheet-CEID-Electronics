@@ -1,95 +1,150 @@
-/* Ensure full-page background */
+/* full-page navy background */
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
 }
-
 body {
-  background-color: navy;
-  color: #fff;
+  background: navy;
   font-family: 'Segoe UI', sans-serif;
-}
-
-
-.main-wrapper {
+  color: #fff;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Container centered with spacing */
+.main-wrapper {
+  width: 100%;
+  max-width: 600px;
   padding: 60px 20px;
+  text-align: center;
 }
 
-h1 {
-  margin-bottom: 20px;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
+/* Modern search bar with expansion on focus */
 .search-row {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
 #search {
-  width: 400px;
-  max-width: 80vw;
-  padding: 12px 16px;
-  border-radius: 30px;
+  flex: 1;
+  max-width: 400px;
+  padding: 14px 20px;
   border: none;
-  outline: none;
+  border-radius: 30px;
   font-size: 1rem;
+  background: #f0f0f0;
+  color: #333;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+#search:focus {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  outline: none;
 }
 
+/* Stylish add button */
 .btn-add {
-  width: 42px;
-  height: 42px;
-  background: #28a745;
-  color: #fff;
+  width: 46px;
+  height: 46px;
+  background: #4caf50;
   border: none;
   border-radius: 50%;
-  font-size: 1.5rem;
+  color: #fff;
+  font-size: 1.6rem;
   cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
 }
-
 .btn-add:hover {
-  background: #218838;
+  background: #45a047;
+  transform: scale(1.05);
 }
 
-/* Component card styling */
+/* Results area */
+#results {
+  margin-top: 30px;
+}
+
+/* Card style for component entries */
 .card {
-  background: #f0f0f0;  /* light grey background */
-  color: #000;
-  border-radius: 10px;
-  margin: 12px auto;
-  padding: 18px 20px;
-  width: 90%;
-  max-width: 600px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: background .2s;
+  background: #f8f9fa; /* light grey background for readability */
+  color: #212529;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  text-align: left;
+  transition: box-shadow 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-
 .card:hover {
-  background: #e0e0e0;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
 }
-
-.card fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 .card legend {
   font-weight: bold;
   font-size: 1.1rem;
+  margin-bottom: 8px;
 }
-
 .card p {
   margin: 6px 0;
   font-size: 0.95rem;
 }
-
 .card p span.key {
   font-weight: 600;
   color: #0056b3;
+}
+.card p a {
+  color: #007bff;
+  text-decoration: none;
+}
+.card p a:hover {
+  text-decoration: underline;
+}
+
+/* Modal styling */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.modal {
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  padding: 24px;
+  width: 90%;
+  max-width: 320px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.modal h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+.modal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+}
+.modal ul li {
+  padding: 8px 0;
+  cursor: pointer;
+  color: #007bff;
+  border-bottom: 1px solid #ccc;
+}
+.modal ul li:hover {
+  background: #e9ecef;
+}
+.btn-close {
+  padding: 8px 12px;
+  border: none;
+  background: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
 }
