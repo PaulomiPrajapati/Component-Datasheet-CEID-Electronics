@@ -1,11 +1,9 @@
 let data = [];
 
-// Load CSV (URL-encoded spaces)
+// Load CSV (with spaces encoded)
 fetch('Spare%20Components%20list%202025.csv')
   .then(r => r.text())
-  .then(csv => {
-    data = Papa.parse(csv.trim(), { header: true }).data;
-  });
+  .then(csv => data = Papa.parse(csv.trim(), { header: true }).data);
 
 const searchEl = document.getElementById('search');
 const resultsEl = document.getElementById('results');
@@ -16,11 +14,6 @@ searchEl.addEventListener('input', () => {
     ? data.filter(r => Object.values(r).some(v => v && v.toLowerCase().includes(q)))
     : [];
   renderCards(matches);
-});
-
-document.querySelector('.clear-btn').addEventListener('click', () => {
-  searchEl.value = '';
-  renderCards([]);
 });
 
 function renderCards(list) {
