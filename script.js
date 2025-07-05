@@ -12,7 +12,7 @@ function loadCSV(path) {
 
 // List all your CSV filenames (URL‑encoded if spaces)
 const files = [
-  'Components.csv',
+  'Book1.csv',
   'Spare%20Components%20list%202025.csv',
   'SMD%20Components.csv',
   'Box%20in%20Cupboard.csv'
