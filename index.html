@@ -7,15 +7,14 @@
   <link href="css/custom.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-center mt-4">Component Search</h1>
-  <div class="search-wrapper">
-    <input id="search" placeholder="🔍 Search by component..." autocomplete="off"/>
-    <button class="clear-btn" title="Clear">&times;</button>
+  <div class="main-wrapper">
+    <h1>Component Search</h1>
+    <div class="search-row">
+      <input id="search" type="search" placeholder="🔍 Search components..." autocomplete="off" />
+      <button id="add-row" class="btn-add">+</button>
+    </div>
+    <div id="results"></div>
   </div>
-
-  <div id="results"></div>
-
-  <button id="add-row" class="add-btn">+</button>
 
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="script.js"></script>
