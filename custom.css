@@ -1,7 +1,8 @@
+/* Background: navy gradient */
 html, body {
   margin: 0; padding: 0; height: 100%;
-  background-color: navy;
-  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f1c3f, #1e2766);
+  font-family: 'Poppins', sans-serif;
   color: white;
 }
 
@@ -12,92 +13,129 @@ html, body {
   padding-top: 80px;
 }
 
+/* Centered search bar */
 .search-row {
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  align-items: center;
 }
 
 #search {
-  width: 350px;
-  padding: 14px 20px;
+  width: 360px;
+  max-width: 80vw;
+  padding: 14px 24px;
   border-radius: 30px;
   border: none;
   font-size: 1rem;
-  color: black;
-  background-color: #f0f0f0;
+  color: #1a202c;
+  background: #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: width 0.3s ease;
+}
+
+#search:focus {
+  outline: none;
+  width: 420px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 .btn-add {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background: #28a745;
+  background: #ff6f61;
   color: white;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   cursor: pointer;
+  animation: pulse 2s infinite ease-in-out;
 }
 
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+/* Results area */
 #results {
+  margin-top: 40px;
   width: 90%;
   max-width: 600px;
-  margin-top: 30px;
 }
 
+/* Card: transparent with glass look */
 .card {
-  background: #f9f9f9;
-  color: #000;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
   padding: 20px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.4s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card legend {
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #a0c4ff;
+}
+
+.card .key {
+  font-weight: 500;
+  color: #7dd3fc;
 }
 
 .card p {
   margin: 6px 0;
-}
-
-.card .key {
-  font-weight: 600;
-  color: #0056b3;
+  font-size: 0.95rem;
 }
 
 .card a {
-  color: #007bff;
-  text-decoration: none;
-}
-.card a:hover {
+  color: #63b3ed;
   text-decoration: underline;
 }
 
-/* Modal styles */
+.card a:hover {
+  color: #90cdf4;
+}
+
+/* Modal styling */
 .modal-overlay {
   display: none;
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
   z-index: 10;
 }
 
 .modal {
-  background: white;
-  color: black;
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  backdrop-filter: blur(15px);
+  border-radius: 14px;
+  padding: 24px;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 
 .modal h4 {
   margin-top: 0;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
 }
 
 .modal ul {
@@ -106,16 +144,24 @@ html, body {
 }
 
 .modal ul li {
-  margin: 8px 0;
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
   cursor: pointer;
-  color: #007bff;
+  transition: background 0.3s;
 }
 
 .modal ul li:hover {
-  text-decoration: underline;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .btn-close {
-  margin-top: 10px;
-  padding: 6px 12px;
+  margin-top: 14px;
+  padding: 8px 14px;
+  background: #ffffff20;
+  color: white;
+  border: 1px solid #fff3;
+  border-radius: 6px;
+  cursor: pointer;
 }
