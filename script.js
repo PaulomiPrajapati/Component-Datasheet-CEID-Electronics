@@ -1,23 +1,10 @@
 let sheets = {}, data = [], headers = {};
 const files = {
-  "Spare Components": 'Spare%20Components%20list%202025.csv',
-  "SMD Components": 'SMD%20Components.csv',
-  "Box in Cupboard": 'Box%20in%20Cupboard.csv',
-  "Book1": 'Book1.csv'
+  "Spare Components": "Spare%20Components%20list%202025.csv",
+  "SMD Components": "SMD%20Components.csv",
+  "Box in Cupboard": "Box%20in%20Cupboard.csv",
+  "Book1": "Book1.csv"
 };
-
-// Load all sheets
-const promises = Object.entries(files).map(([name, path]) =>
-  Papa.parse(path, {
-    download: true, header: true, skipEmptyLines: true,
-    complete: res => { sheets[name] = res.data; headers[name] = res.meta.fields; }
-  })
-);
-Promise.all(promises).then(() => {
-  data = Object.entries(sheets).flatMap(([name, arr]) =>
-    arr.map(r => ({...r, __sheet: name}))
-  );
-});
 
 const searchEl = document.getElementById('search'),
       resultsEl = document.getElementById('results'),
@@ -26,82 +13,105 @@ const searchEl = document.getElementById('search'),
       sheetList = document.getElementById('sheet-list'),
       cancelAdd = document.getElementById('cancel-add');
 
-searchEl.addEventListener('input', () => {
-  const q = searchEl.value.toLowerCase().trim();
-  if (!q) return resultsEl.innerHTML = '';
-  const matches = data.filter(r =>
-    Object.entries(r).some(([k,v])=>k!=='__sheet' && v && v.toLowerCase().includes(q))
+// Load CSVs
+const promises = Object.entries(files).map(([name, path]) =>
+  new Promise(resolve =>
+    Papa.parse(path, {
+      download: true,
+      header: true,
+      skipEmptyLines: true,
+      complete: res => {
+        sheets[name] = res.data;
+        headers[name] = res.meta.fields;
+        resolve();
+      }
+    })
+  )
+);
+
+Promise.all(promises).then(() => {
+  data = Object.entries(sheets).flatMap(([name, rows]) =>
+    rows.map(r => ({ ...r, __sheet: name }))
   );
-  render(matches);
 });
 
-function render(arr) {
+searchEl.addEventListener('input', () => {
+  const query = searchEl.value.toLowerCase().trim();
+  const results = data.filter(row =>
+    Object.values(row).some(val =>
+      val?.toLowerCase().includes(query)
+    )
+  );
+  render(results);
+});
+
+function render(rows) {
   resultsEl.innerHTML = '';
-  arr.forEach(r => {
+  rows.forEach(row => {
     const card = document.createElement('div');
     card.className = 'card';
     const legend = document.createElement('legend');
-    legend.textContent = r[headers[r.__sheet][0]]+` (${r.__sheet})`;
+    legend.textContent = `${row[headers[row.__sheet][0]]} (${row.__sheet})`;
     card.appendChild(legend);
-    headers[r.__sheet].forEach(k => {
-      if (k === headers[r.__sheet][0]) return;
+
+    headers[row.__sheet].forEach((key, idx) => {
+      const val = row[key] || '';
       const p = document.createElement('p');
-      const val = r[k] || '';
-      if (k.toLowerCase().includes('datasheet') && val.startsWith('http')) {
-        p.innerHTML = `<span class="key">${k}:</span> <a href="${val}" target="_blank">${val}</a>`;
-      } else {
-        p.innerHTML = `<span class="key">${k}:</span> <span contenteditable>${val}</span>`;
-      }
+      p.innerHTML = `<span class="key">${key}:</span> ${
+        (val.startsWith('http') && idx === headers[row.__sheet].length - 1)
+          ? `<a href="${val}" target="_blank">${val}</a>`
+          : val
+      }`;
       card.appendChild(p);
     });
+
     resultsEl.appendChild(card);
   });
 }
 
-// Add-new flow
-addBtn.addEventListener('click', () => {
+// Add functionality
+addBtn.onclick = () => {
   sheetList.innerHTML = '';
-  Object.keys(sheets).forEach(name => {
+  Object.keys(sheets).forEach(sheet => {
     const li = document.createElement('li');
-    li.textContent = name;
-    li.onclick = () => openAddForm(name);
+    li.textContent = sheet;
+    li.onclick = () => openAddForm(sheet);
     sheetList.appendChild(li);
   });
-  modal.style.display = 'block';
-});
+  modal.style.display = 'flex';
+};
 
-cancelAdd.onclick = ()=>modal.style.display='none';
+cancelAdd.onclick = () => modal.style.display = 'none';
 
 function openAddForm(sheetName) {
   modal.style.display = 'none';
-  resultsEl.innerHTML = '';
-  const hdr = headers[sheetName];
+  const hdrs = headers[sheetName];
+  const newObj = { __sheet: sheetName };
+
   const card = document.createElement('div');
   card.className = 'card';
   const legend = document.createElement('legend');
-  legend.textContent = `New in ${sheetName}`;
+  legend.textContent = `Add to ${sheetName}`;
   card.appendChild(legend);
-  const newObj = {__sheet: sheetName};
-  hdr.forEach(k => {
+
+  hdrs.forEach(key => {
     const p = document.createElement('p');
-    const span = document.createElement('span');
-    span.className = 'key';
-    span.textContent = k + ':';
-    const inp = document.createElement('span');
-    inp.setAttribute('contenteditable','true');
-    inp.style.marginLeft = '8px';
-    p.appendChild(span);
-    p.appendChild(inp);
-    inp.onblur = () => newObj[k] = inp.innerText;
+    p.innerHTML = `<span class="key">${key}:</span> <span contenteditable data-key="${key}" style="margin-left: 8px; background: #eee; padding: 2px 5px;"></span>`;
     card.appendChild(p);
   });
-  const saveBtn = document.createElement('button');
-  saveBtn.textContent = 'Save';
-  saveBtn.onclick = () => {
+
+  const save = document.createElement('button');
+  save.textContent = 'Save';
+  save.onclick = () => {
+    card.querySelectorAll('[contenteditable]').forEach(span => {
+      newObj[span.dataset.key] = span.innerText.trim();
+    });
     sheets[sheetName].push(newObj);
-    data.unshift(newObj);
+    data.push(newObj);
     render([newObj]);
   };
-  card.appendChild(saveBtn);
+
+  card.appendChild(save);
+  resultsEl.innerHTML = '';
   resultsEl.appendChild(card);
 }
