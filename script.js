@@ -1,9 +1,9 @@
 let sheets = {}, data = [], headers = {};
 const files = {
-  "Spare Components": "Spare%20Components%20list%202025.csv",
-  "SMD Components": "SMD%20Components.csv",
-  "Box in Cupboard": "Box%20in%20Cupboard.csv",
-  "Book1": "Book1.csv"
+  "Components": "Components.csv",
+  "SMD Components": "SMD%20components.csv",
+  "Box in Cupboard": "BOX%20IN%20CUPBOARD.csv",
+  "Sheet1": "SHEET1.csv"
 };
 
 const searchEl = document.getElementById('search'),
