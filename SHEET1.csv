@@ -1,0 +1,228 @@
+MATERIAL_DESC,STORAGE_LOCATION,SUBSTORE_STOCK,CURRENT_STOCK,DATASHEET
+,,,,
+74LS123N,I1_1_1,36,,https://www.ti.com/lit/ds/symlink/sn54ls123.pdf?ts=1751259551676&ref_url=https%253A%252F%252Fwww.mouser.in%252F
+SN74LS221,I1_1_1,21,,https://www.ti.com/lit/ds/symlink/sn54221.pdf?ts=1751259582957&ref_url=https%253A%252F%252Fwww.google.com%252F
+TC4429 ,I1_1_1,10,,https://ww1.microchip.com/downloads/en/DeviceDoc/21419D.pdf
+TC7662A,I1_1_1,14,,https://ww1.microchip.com/downloads/en/devicedoc/21468b.pdf
+DM74163N,I1_1_2,2,,https://www.jameco.com/Jameco/Products/ProdDS/49672.pdf
+SN74HC164N,I1_1_2,1,,https://www.ti.com/lit/ds/symlink/sn74hc164.pdf?ts=1751259725822&ref_url=https%253A%252F%252Fwww.google.com%252F
+IC HV9123P (16 PIN),I1_1_2,10,,https://www.microchip.com/content/dam/mchp/documents/OTH/ProductDocuments/DataSheets/HV9123%20C031314.pdf
+DM74LS139N,I1_1_2,2,,https://www.farnell.com/datasheets/303995.pdf
+MC14044,I1_1_2,10,,https://www.onsemi.com/pdf/datasheet/mc14043b-d.pdf
+NE555,I1_1_2,11,,https://www.ti.com/lit/ds/symlink/ne555.pdf
+TLC555,I1_1_2,10,,https://www.ti.com/lit/ds/symlink/tlc555.pdf
+HEF4093=CD4093BE,I1_1_3,20,,https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1751202320295&ref_url=https%253A%252F%252Fwww.google.com%252F
+SN7407,I1_1_3,1,,https://www.ti.com/lit/ds/symlink/sn7407.pdf?ts=1751185655693&ref_url=https%253A%252F%252Fwww.google.com%252F
+NE555,I1_1_3,10,,https://www.ti.com/lit/ds/symlink/ne555.pdf
+IR2121,I1_1_3,19,,https://www.infineon.com/dgdl/Infineon-IR2121-DS-v01_00-EN.pdf?fileId=5546d462533600a4015355c84fa31691
+TL594CN,I1_1_4,19,,https://www.ti.com/lit/ds/symlink/tl594.pdf?ts=1751199974627&ref_url=https%253A%252F%252Fwww.google.com%252F
+TOP223,I1_1_4,9,,https://www.power.com/sites/default/files/documents/top221-227.pdf
+SN7410N = DM74LS10N1 = HD 74S10P,I1_1_4,15,,https://www.ti.com/lit/ds/symlink/sn7414.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1751260001980&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fsn7414
+M74HC74N,I1_1_5,34,,https://www.mouser.com/datasheet/2/389/stmicroelectronics_cd00000347-1204269.pdf?srsltid=AfmBOoqmyKampFCNdmj96F3A0vzw2daeGesH-O_Y461qeJIrKWJgItvq
+6N137,I1_1_5,10,,https://www.vishay.com/docs/84732/6n137.pdf
+74LS155,I1_1_6,13,,https://www.ti.com/lit/ds/symlink/sn54ls155a.pdf?ts=1751260100216&ref_url=https%253A%252F%252Fwww.google.com%252F
+MC14011B,I1_1_6,2,,https://www.onsemi.com/download/data-sheet/pdf/mc14001b-d.pdf
+M74HCT86,I1_1_7,51,,https://www.mantech.co.za/datasheets/products/M74HCT86_ST.pdf?srsltid=AfmBOopgBMw6rcTIHMl-L_jmw6nz9d0rQdvtH8cmm-ER8qCRQCLAsCmi
+TD62504P,I1_2_1,5,,https://www.futurlec.com/Datasheet/Linear/TD62503P.pdf
+IE20034,I1_2_1,3,,https://www.jotrin.com/product/parts/IE20034?srsltid=AfmBOopiQ-5eueE1lAmyYYsDPLeJ8ec2MmfGcbIrZ_EzCU2knvlXp2tH
+UC3847,I1_2_1,20,,https://www.ti.com/lit/ds/symlink/uc2846.pdf?ts=1751260255816&ref_url=https%253A%252F%252Fwww.google.com%252F
+LNK362PN,I1_2_1,20,,https://www.mouser.com/datasheet/2/328/lnk362-364-1511784.pdf?srsltid=AfmBOopdHwIktIbUGc_go322eXxLWxaTGTHNKO3GgtVkPjp0gcEiJs_0
+LNK364,I1_2_1,7,,https://www.mouser.com/datasheet/2/328/lnk362-364-1511784.pdf?srsltid=AfmBOopdHwIktIbUGc_go322eXxLWxaTGTHNKO3GgtVkPjp0gcEiJs_0
+TLC274BCN,I1_2_2,4,,https://www.ti.com/lit/ds/symlink/tlc279.pdf?ts=1751234291037&ref_url=https%253A%252F%252Fwww.google.fr%252F
+LF398,I1_2_2,22,,https://www.ti.com/lit/ds/symlink/lf398-n.pdf
+DBL494 = TL494,I1_2_3,16,,https://www.ti.com/lit/ds/symlink/tl494.pdf?ts=1751203766606&ref_url=https%253A%252F%252Fwww.google.com%252F
+TLC0820CN,I1_2_3,19,,https://www.ti.com/lit/ds/symlink/tlc0820a.pdf?ts=1751260391519&ref_url=https%253A%252F%252Fwww.google.com%252F
+HCF4094 = CD4094,I1_2_4,28,,https://www.st.com/resource/en/datasheet/hcf4094.pdf
+SFH6345 (6 PIN),I1_2_4,10,,https://www.vishay.com/docs/83680/sfh6345.pdf
+HCF4073B = MC14073BCP,I1_2_5,68,,https://www.alldatasheet.com/datasheet-pdf/pdf/90061/MOTOROLA/MC14073BCP.html
+MC14076B,I1_2_5,2,,https://www.onsemi.com/pdf/datasheet/mc14076b-d.pdf
+MC14013BCP,I1_2_5,1,,https://www.onsemi.com/pdf/datasheet/mc14013b-d.pdf
+M324SN,I1_2_5,1,,https://www.alldatasheet.com/view.jsp?Searchword=M324&sField=3
+HCF4073,I1_2_6,3,,https://media.digikey.com/pdf/Data%20Sheets/ST%20Microelectronics%20PDFS/HCF4073B.pdf
+LM239,I1_2_6,10,,https://www.st.com/resource/en/datasheet/lm139.pdf
+GAL16V8A,I1_2_6,1,,https://www.jameco.com/Jameco/Products/ProdDS/876619.pdf?srsltid=AfmBOoosAoYqKtSUz3kPldaiyVTmm3fhGGpolLWCA8BmAPg5KPYlyuAD
+7416,I1_2_7,1,,https://www.ti.com/lit/ds/symlink/sn7416.pdf?ts=1751260602904&ref_url=https%253A%252F%252Fwww.google.com%252F
+SN74167N,I1_2_7,1,,https://www.ti.com/lit/ds/symlink/sn7416.pdf?ts=1751260602904&ref_url=https%253A%252F%252Fwww.google.com%252F
+HEF4001BP/CD4001,I1_2_7,34,,https://assets.nexperia.com/documents/data-sheet/HEF4001B.pdf
+74LS04,I1_2_7,8,,https://www.ti.com/lit/ds/symlink/sn74ls04.pdf?ts=1751220840306&ref_url=https%253A%252F%252Fwww.google.com%252F
+LM139,I1_3_1,8,,https://www.st.com/resource/en/datasheet/lm139.pdf
+ULN 2803,I1_3_1,3,,https://www.ti.com/lit/ds/symlink/uln2803c.pdf?ts=1751260691476&ref_url=https%253A%252F%252Fwww.google.com%252F
+MC3487,I1_3_1,12,,https://www.ti.com/lit/ds/symlink/mc3487.pdf
+HCF4086,I1_3_1,13,,https://www.digchip.com/datasheets/parts/datasheet/456/HCF4086-pdf.php
+SG3525A,I1_3_2,2,,https://www.onsemi.com/download/data-sheet/pdf/sg3525a-d.pdf
+5M0365R (4 LEG),I1_3_2,10,,https://www.sea12.go.th/ict/images/stories/datatec/5m0365.pdf
+CD4071,I1_3_2,9,,https://www.ti.com/lit/ds/symlink/cd4071b-mil.pdf?ts=1751251956195&ref_url=https%253A%252F%252Fwww.google.com%252F
+L603C,I1_3_3,10,,https://www.st.com/resource/en/datasheet/l603.pdf
+AD790JN,I1_3_3,7,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad790.pdf
+TD62004,I1_3_3,2,,https://www.mouser.com/ds/2/408/DST_TD62003APG-TDE_EN_11444-480756.pdf?srsltid=AfmBOoo4mW8BhR7w4j844a75LtZbRtbGT2XwthFzjBvS4Dz81jca0SUp
+HA17902P,I1_3_3,4,,https://www.renesas.com/en/document/dst/ha17902-series-datasheet?srsltid=AfmBOoqVH6jS7Lmfn2TM8-e9LOYrtKBEWcpgSOL5eOfS2xL8VJCh4uNv
+A3120,I1_3_3,6,,https://www.mouser.com/datasheet/2/678/V02-0161EN_DS_HCPL-3120_2016-03-21-908803.pdf?srsltid=AfmBOorlXclz5IhaqS4R5Mk_FhQsENqYrJc_bnQ1kZipmkvmh7sOVhir
+SN74LS07N = SN7407,I1_3_4,20,,https://www.ti.com/lit/ds/symlink/sn7407.pdf?ts=1751185655693&ref_url=https%253A%252F%252Fwww.google.com%252F
+MC14105BCP,I1_3_4,1,,https://www.onsemi.com/download/data-sheet/pdf/mc1455-d.pdf
+M82088,I1_3_4,1,,….
+M74HCT138B = CD74HCT138 = SN74HCT138,I1_3_5,37,,https://www.ti.com/lit/ds/symlink/sn54hct138.pdf?ts=1751218943356&ref_url=https%253A%252F%252Fwww.google.com%252F
+TC4016BP,I1_3_6,6,,https://bg-electronics.de/datenblaetter/Schaltkreise/TC4016BP.pdf
+93C56,I1_3_6,3,,https://docs.rs-online.com/dad3/0900766b813214b4.pdf
+HCF4019B,I1_3_6,10,,https://www.nikom.biz/pdf/4019BE_STM.pdf?srsltid=AfmBOoqjwUBpuMY4aWnYtvx3oSC-7627xR0VaqHdq488lz1080CYizz1
+SG2524,I1_3_6,19,,https://www.ti.com/lit/ds/symlink/sg3524.pdf?ts=1751189379278&ref_url=https%253A%252F%252Fwww.bing.com%252F
+HEF4025BG = HCF4025BG = CD4025BE,I1_3_7,26,,https://www.ti.com/lit/ds/symlink/cd4001b-mil.pdf?ts=1751261207916&ref_url=https%253A%252F%252Fwww.google.com%252F
+TA8631N,I1_4_1,1,,https://www.digchip.net/datasheets/parts/datasheet/487/TA8631N-pdf.php
+SI9910DJ,I1_4_1,3,,https://www.vishay.com/docs/70009/si9910.pdf
+TL082A,I1_4_1,18,,https://www.ti.com/lit/ds/symlink/tl082a.pdf?ts=1751261306823&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTL082A
+74LS74,I1_4_1,10,,https://www.ti.com/lit/ds/symlink/sn54ls74a-sp.pdf?ts=1751186105551&ref_url=https%253A%252F%252Fwww.google.com%252F
+ADG508,I1_4_1,9,,https://www.analog.com/media/en/technical-documentation/data-sheets/adg508f_509f.pdf
+HEF4013BP,I1_4_2,18,,https://assets.nexperia.com/documents/data-sheet/HEF4013B.pdf
+TOP244,I1_4_2,13,,https://www.power.com/sites/default/files/documents/topswitch-gx_family_datasheet.pdf
+ML4812CP,I1_4_2,4,,https://images.100y.com.tw/pdf_file/ML4812CP.pdf
+GD4019 = HCF4019BE,I1_4_3,38,,https://www.alldatasheet.com/view.jsp?Searchword=HCF4019BES&q=HCF4019BE
+HD74S10P,I1_4_3,1,,https://cdn-reichelt.de/documents/datenblatt/A200/LS10_REN.pdf
+SN74LS122 = SN74122,I1_4_4,33,,https://www.ti.com/lit/ds/symlink/sn54123.pdf?ts=1751261467906&ref_url=https%253A%252F%252Fwww.google.com%252F
+TL594,I1_4_4,20,,https://www.ti.com/lit/ds/symlink/tl594.pdf?ts=1751199974627&ref_url=https%253A%252F%252Fwww.google.com%252F
+HCF4069,I1_4_5,8,,https://www.st.com/resource/en/datasheet/hcf4069u.pdf
+CD4046,I1_4_5,10,,https://www.ti.com/lit/ds/symlink/cd4046b.pdf?ts=1751210201127&ref_url=https%253A%252F%252Fwww.google.com%252F
+OP400,I1_4_5,9,,https://www.analog.com/media/en/technical-documentation/data-sheets/op400.pdf
+5M0165,I1_4_5,5,,https://www.sea12.go.th/ict/images/stories/datatec/5m0365.pdf
+CD4066 = HCF4066,I1_4_6,21,,https://www.ti.com/lit/ds/symlink/cd4066b.pdf
+TC4426A/MIC4426,I1_4_6,3,,https://ww1.microchip.com/downloads/en/DeviceDoc/20001423J.pdf
+HCF4081 = CD4081VBE,I1_4_7,53,,https://www.st.com/resource/en/datasheet/hcf4081.pdf
+CD4025BE,I1_4_8,1,,https://www.ti.com/lit/ds/symlink/cd4001b-mil.pdf?ts=1751261207916&ref_url=https%253A%252F%252Fwww.google.com%252F
+HEF4051BP,I1_4_9,10,,https://assets.nexperia.com/documents/data-sheet/HEF4051B.pdf
+M4006,I1_5_1,10,,https://www.charlesindustries.com/wp-content/uploads/2021/05/LTMA4-006-002.pdf
+74LS138,I1_5_1,20,,https://www.ti.com/lit/ds/symlink/sn54ls138-sp.pdf?ts=1751219378753&ref_url=https%253A%252F%252Fwww.google.com%252F
+HCF4027,I1_5_1,20,,http://www-9.unipv.it/lde/strumentazione_comp/datasheet/4027.pdf
+SN74HCT245,I1_5_2,9,,https://www.ti.com/lit/ds/symlink/sn74hct245.pdf
+TNY278 & DS8922,I1_5_2,11,,https://www.power.com/sites/default/files/documents/tinyswitch-iii_family_datasheet.pdf
+VIPER22A,I1_5_2,0,,https://www.st.com/resource/en/datasheet/viper22a-e.pdf
+TL074,I1_5_3,23,,https://www.st.com/resource/en/datasheet/tl074.pdf
+SG6841,I1_5_3,34,,https://www.rcscomponents.kiev.ua/datasheets/SG6841.PDF?srsltid=AfmBOoqnZck3GmsTwy2nMfNyev0ppV77DOJHyGkzMGde3w4TIaAGeSBU
+TC4019,I1_5_4,10,,https://www.silicon-ark.co.uk/datasheets/tc4019-datasheet.pdf
+A4514,I1_5_4,2,,…
+HA17358,I1_5_4,28,,https://avtronic.eu/medias/ha17358/ha17358.pdf
+UC2843,I1_5_4,17,,https://www.ti.com/lit/ds/symlink/uc2843a-q1.pdf?ts=1751193211300&ref_url=https%253A%252F%252Fwww.google.com%252F
+74HC02 = 74LS02 = DM742S02N,I1_5_5,51,,https://www.ti.com/lit/ds/symlink/sn74hc02.pdf
+SN74HC191,I1_5_5,1,,https://www.ti.com/lit/ds/symlink/sn74hc191.pdf
+74HC161 / SN74LS161,I1_5_6,29,,https://assets.nexperia.com/documents/data-sheet/74HC161.pdf
+CD4047,I1_5_7,1,,https://www.ti.com/lit/ds/symlink/cd4047b.pdf?ts=1751196615593&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4047B%252Fpart-details%252FCD4047BM
+CD4030 = HEF4030,I1_5_7,10,,https://www.ti.com/lit/ds/symlink/cd4030b.pdf?ts=1751262017759&ref_url=https%253A%252F%252Fwww.google.com%252F
+SN75188,I1_6_1,4,,https://www.ti.com/lit/ds/slls094c/slls094c.pdf?ts=1751262031819&ref_url=https%253A%252F%252Fwww.google.com%252F
+CD4011B,I1_6_1,3,,https://www.ti.com/lit/ds/symlink/cd4011b.pdf?ts=1751262155923&ref_url=https%253A%252F%252Fwww.google.com%252F
+L4963,I1_6_1,3,,https://www.st.com/resource/en/datasheet/l4963.pdf
+74LS155,I1_6_1,10,,https://www.ti.com/lit/ds/symlink/sn54ls155a.pdf?ts=1751260100216&ref_url=https%253A%252F%252Fwww.google.com%252F
+LM10CN,I1_6_1,10,,https://www.ti.com/lit/ds/symlink/lm10.pdf
+CA3240,I1_6_1,34,,https://www.renesas.com/ja/document/dst/ca3240-ca3240a-datasheet?srsltid=AfmBOork55rfcT81-txlMWoZ0U6iziY-ImZtlB6vm0i7qF4dQHTWGQhl
+4050,I1_6_2,52,,https://www.ti.com/lit/ds/symlink/cd4049ub.pdf
+AD737,I1_6_2,1,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad737.pdf
+FAN4803,I1_6_2,4,,https://www.mouser.com/ds/2/308/FAN4803-1-1191942.pdf?srsltid=AfmBOoqCERzScDmhDBRM8rZwaARz3WxIGSjNlxJTp5j-RTsEHGea3StM
+CD4017,I1_6_3,3,,https://www.ti.com/lit/ds/symlink/cd4017b.pdf
+IXDN502,I1_6_3,15,,https://www.mouser.com/ds/2/205/ds99573-297035.pdf?srsltid=AfmBOorHcR3fKsLhTCSzJdoXuJMv5InWAU0F91zxhWFUdVe9gL0vw5yb
+TL7702ACP,I1_6_3,4,,https://www.ti.com/lit/ds/symlink/tl7705a.pdf?ts=1751262332798&ref_url=https%253A%252F%252Fwww.google.com%252F
+CD4511,I1_6_3,10,,https://www.ti.com/lit/ds/symlink/cd4511b-mil.pdf?ts=1751202860766&ref_url=https%253A%252F%252Fwww.google.com%252F
+7438 = SN74LS38,I1_6_4,48,,https://www.ti.com/lit/ds/symlink/sn74ls38.pdf?ts=1751262365280&ref_url=https%253A%252F%252Fwww.google.com%252F
+4013,I1_6_5,63,,https://www.ti.com/lit/ds/symlink/cd4013b.pdf?ts=1751187908623&ref_url=https%253A%252F%252Fwww.google.com%252F
+RM4156,I1_6_6,11,,https://tvsat.com.pl/PDF/R/RM4156_ray.pdf
+TD62064,I1_6_6,32,,"https://www.mouser.com/datasheet/2/408/toshiba%20america%20electronic%20components,%20inc._dst_td-1209427.pdf?srsltid=AfmBOoo7Ok4FuurDO9KAGXf954w2czBwe59mWUl3Q2RF7NrKYDGQg2P5"
+CD4006,I1_6_7,8,,https://www.ti.com/lit/ds/symlink/cd4006b-mil.pdf?ts=1751262433570&ref_url=https%253A%252F%252Fwww.google.com%252F
+CY8C27443-24PXI,I1_6_7,1,,https://www.infineon.com/dgdl/Infineon-CY8C27143_CY8C27243_CY8C27443_CY8C27543_CY8C27643_PSOC_PROGRAMMABLE_SYSTEM-ON-CHIP-DataSheet-v31_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ec678d03cb4
+GAL16V8D,I1_6_7,20,,https://ece-classes.usc.edu/ee459/library/datasheets/16v8.pdf
+HD74LS00 = 74LS00,I1_7_1,33,,https://www.ti.com/lit/ds/symlink/sn74ls00.pdf
+HD74L508,I1_7_1,1,,https://www.renesas.com/en/document/dst/hd74ls08-datasheet?srsltid=AfmBOorSOL9jjDQX1VvowhBY6zHtW_h9v764Mn14fBKhVlYUc_OT4U_d
+4543,I1_7_1,20,,https://www.ti.com/lit/ds/symlink/cd4543b.pdf?ts=1751262548312&ref_url=https%253A%252F%252Fwww.google.com%252F
+4028,I1_7_2,19,,https://www.ti.com/lit/ds/symlink/cd4028b.pdf?ts=1751262566472&ref_url=https%253A%252F%252Fwww.google.com%252F
+T74LS08B1,I1_7_2,13,,https://www.silicon-ark.co.uk/datasheets/t74ls08b1-datasheet-stmicroelectronics.pdf
+74139,I1_7_3,64,,https://www.ti.com/lit/ds/symlink/sn54ls139a-sp.pdf?ts=1751262606224&ref_url=https%253A%252F%252Fwww.google.com%252F
+ICL8038ACP,I1_7_4,14,,https://www.renesas.com/en/document/dst/icl8038-datasheet?srsltid=AfmBOoqnhkG6Iw8b2Bm0N33ezMGmvqy9g-yoa9q6Wxpsnd6wvw-oI0fo
+4528,I1_7_4,20,,https://assets.nexperia.com/documents/data-sheet/HEF4528B.pdf
+UC2845,I1_7_4,21,,https://www.mouser.com/datasheet/2/308/uc3844-d-1196439.pdf?srsltid=AfmBOormzLiPA6xUUUbsMsob727e1sTv3O_KPAFpQznnhzKPTADVMsht
+SN74LS05,I1_7_5,10,,https://www.ti.com/lit/ds/symlink/sn7405.pdf
+MC1415,I1_7_5,10,,https://www.ti.com/lit/ds/symlink/mc1458.pdf?ts=1751262703196&ref_url=https%253A%252F%252Fwww.google.com%252F
+TNY276,I1_7_5,5,,https://www.power.com/sites/default/files/documents/tinyswitch-iii_family_datasheet.pdf
+HCF4047,I1_7_6,21,,https://media.digikey.com/pdf/Data%20Sheets/ST%20Microelectronics%20PDFS/HCF4047B.pdf
+MC1489,I1_7_6,5,,https://www.onsemi.com/pdf/datasheet/mc1489-d.pdf
+SN74ALS139N,I1_7_6,4,,https://www.ti.com/lit/ds/symlink/sn74als139.pdf?ts=1751262787268&ref_url=https%253A%252F%252Fwww.google.com%252F
+SN7407,I1_7_7,6,,https://users.ece.utexas.edu/~valvano/Datasheets/7407.pdf
+LM723,I1_7_7,0,,https://www.ti.com/lit/ds/symlink/lm723.pdf
+SN74LS00,I1_7_7,16,,https://www.ti.com/lit/ds/symlink/sn74ls00.pdf
+74HC04N,I1_8_1,47,,https://www.ti.com/lit/ds/symlink/sn74hc04.pdf
+UC3843,I1_8_1,26,,https://www.mouser.com/datasheet/2/149/uc3843-309322.pdf?srsltid=AfmBOoortCE1OojLBpbi_iKahKgYQA7hDWmVUCJedki7Hg8vgb9nMJI2
+HEF4049 = CD4049UBE,I1_8_2,19,,https://www.ti.com/lit/ds/symlink/cd4049ub.pdf
+MAX691CPE,I1_8_2,10,,https://www.analog.com/media/en/technical-documentation/data-sheets/max690-max695.pdf
+7406 = SN74LS06,I1_8_3,56,,https://www.ti.com/lit/ds/symlink/sn74ls06.pdf?ts=1751193980235&ref_url=https%253A%252F%252Fwww.google.com%252F
+CD4017,I1_8_4,9,,https://www.ti.com/lit/ds/symlink/cd4017b.pdf
+TOP234 (5 LEG),I1_8_4,0,,https://www.power.com/sites/default/files/documents/topswitch-fx_family_datasheet.pdf
+74HC244,I1_8_4,19,,https://www.mouser.com/datasheet/2/308/74HC244-D-310411.pdf?srsltid=AfmBOopUIqa6jR2cIBaByw0U2-MjXiTEaF6P2w3xpQX4RPpdcOhSZteX
+MC14001BCP,I1_8_5,25,,https://www.onsemi.com/download/data-sheet/pdf/mc14001b-d.pdf
+HCF4006BE,I1_8_6,10,,https://www.pilianidis.gr/images/sync_products/03-HCF4006BE/HCF4006B.pdf
+74HC4051,I1_8_6,44,,https://www.ti.com/lit/ds/symlink/cd74hc4051-ep.pdf?ts=1751225842477&ref_url=https%253A%252F%252Fwww.google.com.tr%252F
+SN75189,I1_8_7,8,,https://www.ti.com/lit/ds/symlink/sn55189a.pdf?ts=1751263070485&ref_url=https%253A%252F%252Fwww.google.com%252F
+CP1002,I1_8_7,5,,https://assets.danfoss.com/documents/latest/366681/BC359076148047en-000201.pdf
+MC14073,I1_9_1,29,,https://www.onsemi.com/pdf/datasheet/mc14001b-d.pdf
+3525,I1_9_1,3,,https://www.onsemi.com/download/data-sheet/pdf/sg3525a-d.pdf
+MAX485,I1_9_1,9,,https://www.analog.com/media/en/technical-documentation/data-sheets/MAX1487-MAX491.pdf
+SN74LS138 = HD74LS138,I1_9_2,30,,https://www.ti.com/lit/ds/symlink/sn54ls138-sp.pdf?ts=1751219378753&ref_url=https%253A%252F%252Fwww.google.com%252F
+93C46,I1_9_2,8,,https://ww1.microchip.com/downloads/en/DeviceDoc/doc5140.pdf
+MC14011,I1_9_3,21,,https://www.onsemi.com/download/data-sheet/pdf/mc14001b-d.pdf
+CD4017,I1_9_3,1,,https://www.ti.com/lit/ds/symlink/cd4017b.pdf
+74HC132N,I1_9_3,11,,https://assets.nexperia.com/documents/data-sheet/74HC_HCT132.pdf
+CD4543,I1_9_4,9,,https://www.ti.com/lit/ds/symlink/cd4543b.pdf?ts=1751262548312&ref_url=https%253A%252F%252Fwww.google.com%252F
+TS27L4CN,I1_9_4,1,,https://www.st.com/resource/en/datasheet/ts27l4.pdf
+3842,I1_9_4,4,,https://www.onsemi.com/pdf/datasheet/uc3842b-d.pdf
+IRF2110,I1_9_4,3,,https://www.infineon.com/dgdl/Infineon-IR2110-DataSheet-v01_00-EN.pdf?fileId=5546d462533600a4015355c80333167e
+SN74165N,I1_9_5,15,,https://www.ti.com/lit/ds/symlink/sn54ls165a-sp.pdf?ts=1751263384155&ref_url=https%253A%252F%252Fwww.google.com%252F
+TDA2595,I1_9_5,3,,https://www.limpulsion.fr/upload/docs/TDA2595.PDF
+ULN2003,I1_9_5,1,,https://www.st.com/resource/en/datasheet/uln2001.pdf
+TL084CN,I1_9_6,26,,https://www.ti.com/lit/ds/symlink/tl084.pdf
+UC2846,I1_9_6,3,,https://www.ti.com/lit/ds/symlink/uc2846.pdf?ts=1751260255816&ref_url=https%253A%252F%252Fwww.google.com%252F
+UC2854,I1_9_6,5,,https://www.ti.com/lit/ds/symlink/uc2854b-ep.pdf?ts=1751182064826&ref_url=https%253A%252F%252Fwww.google.com%252F
+74LS136,I1_9_7,33,,https://www.ti.com/lit/ds/symlink/sn74ls136.pdf?ts=1751263515526&ref_url=https%253A%252F%252Fwww.google.com%252F
+74HC138,I1_9_7,10,,https://assets.nexperia.com/documents/data-sheet/74HC_HCT138.pdf
+DM74LS33N,I1_10_1,20,,https://agelectronica.lat/pdfs/textos/7/74LS33.PDF
+4803,I1_10_1,5,,https://www.mouser.com/ds/2/308/FAN4803-1-1191942.pdf?srsltid=AfmBOoqMkcsFZ3MOANY0oGEQR7YyCPVQq35SeDO4k-8CVtKMAsOr-0-M
+MAX707,I1_10_1,3,,https://www.mouser.com/datasheet/2/308/MAX707-D-75585.pdf?srsltid=AfmBOorplMvd7WvBS3xoy2pZxdhl5tNkWOmwAjXouoM28g1Je6oGHBuw
+6N139,I1_10_1,11,,https://www.vishay.com/docs/83605/6n139.pdf
+SN74LS33N,I1_10_1,5,,https://www.ti.com/lit/ds/symlink/sn74ls33.pdf?ts=1751263642191&ref_url=https%253A%252F%252Fwww.google.com%252F
+HD74HC14,I1_10_2,25,,https://docs.rs-online.com/b5a6/0900766b80c2d34d.pdf
+74HC138,I1_10_2,2,,https://assets.nexperia.com/documents/data-sheet/74HC_HCT138.pdf
+MC14584,I1_10_2,19,,https://www.onsemi.com/download/data-sheet/pdf/mc14584b-d.pdf
+74LS04 = 74HCT04,I1_10_3,64,,https://www.ti.com/lit/ds/symlink/sn74ls04.pdf?ts=1751220840306&ref_url=https%253A%252F%252Fwww.google.com%252F
+HEF4011 = TC4011,I1_10_4,44,,https://assets.nexperia.com/documents/data-sheet/HEF4011B.pdf
+CD4069,I1_10_5,10,,https://www.ti.com/lit/ds/symlink/cd4069ub.pdf?ts=1751263749713&ref_url=https%253A%252F%252Fwww.google.com%252F
+L293D,I1_10_5,11,,https://www.ti.com/lit/ds/symlink/l293.pdf
+MIP2F2,I1_10_5,1,,https://imrad.com.ua/userdata/modules/productFiles/trlCfLSi_MIP2F20MS-Panasonic.pdf?srsltid=AfmBOor3oUM75Be-cRE1h-7osCDNkFXNTf34h-d3dhA-Vknvj1AwbcHV
+CD4070,I1_10_5,8,,https://www.ti.com/lit/ds/symlink/cd4070b.pdf?ts=1751263794257&ref_url=https%253A%252F%252Fwww.google.com%252F
+NE556,I1_10_6,19,,https://www.ti.com/lit/ds/symlink/na556.pdf?ts=1751263811789&ref_url=https%253A%252F%252Fwww.google.com%252F
+MAX485,I1_10_6,6,,https://www.analog.com/media/en/technical-documentation/data-sheets/MAX1487-MAX491.pdf
+CD40168CN,I1_10_7,8,,https://www.ti.com/lit/ds/symlink/cd4018b.pdf?ts=1751263843222&ref_url=https%253A%252F%252Fwww.google.com%252F
+A3131,I1_10_7,9,,https://techcenter.lanxess.com/scp/americas/en/products/datasheet/LANXESS_Pocan_A3131_000000_ISO_EN.pdf?docId=31465652
+CD4053 = HD14053,I1_11_1,20,,https://www.ti.com/lit/ds/symlink/cd4053b.pdf?ts=1751191738568&ref_url=https%253A%252F%252Fwww.google.com%252F
+FA13844,I1_11_1,20,,https://assets.yoreparo.com/attachments/nL3G7JGQcoYfxvtxsllDmRICLEmgbZ7OnsWF85yW.pdf
+UC2844,I1_11_1,16,,https://www.ti.com/lit/ds/symlink/uc2845aq.pdf?ts=1751260925607
+DAC0800LCN,I1_11_2,9,,https://www.ti.com/lit/ds/symlink/dac0800.pdf
+TLC2652,I1_11_2,4,,https://www.ti.com/lit/ds/symlink/tlc2652.pdf?ts=1751263993063&ref_url=https%253A%252F%252Fwww.google.com%252F
+74HCTLS161,I1_11_2,1,,https://www.ti.com/lit/ds/symlink/sn74ls161a.pdf?ts=1751264008164&ref_url=https%253A%252F%252Fwww.google.com%252F
+74122,I1_11_2,1,,https://www.ti.com/lit/ds/symlink/sn54123.pdf?ts=1751261467906&ref_url=https%253A%252F%252Fwww.google.com%252F
+TNY264,I1_11_2,3,,https://www.farnell.com/datasheets/98510.pdf
+CD4053,I1_11_2,3,,https://www.ti.com/lit/ds/symlink/cd4053b.pdf?ts=1751191738568&ref_url=https%253A%252F%252Fwww.google.com%252F
+DM74132N = 74HC132N,I1_11_3,40,,https://assets.nexperia.com/documents/data-sheet/74HC_HCT132.pdf
+LM239,I1_11_3,1,,https://www.ti.com/lit/ds/symlink/lm139.pdf
+74423,I1_11_3,1,,https://www.we-online.com/components/products/datasheet/744223.pdf
+74LS42,I1_11_3,1,,https://www.futurlec.com/Datasheet/74ls/74LS42.pdf
+74HC132N,I1_11_4,28,,https://assets.nexperia.com/documents/data-sheet/74HC_HCT132.pdf
+74HC32= M74HCT32B,I1_11_4,4,,https://assets.nexperia.com/documents/data-sheet/74HC_HCT32.pdf
+CD4093,I1_11_4,4,,https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1751202320295&ref_url=https%253A%252F%252Fwww.google.com%252F
+HEF4093BP,I1_11_5,7,,https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf
+MCT2E,I1_11_5,6,,https://www.farnell.com/datasheets/94950.pdf
+UC3845,I1_11_5,27,,https://www.ti.com/lit/ds/symlink/uc3845.pdf?ts=1751190743064&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FUC3845%253Fbm-verify%253DAAQAAAAL_____2UcVO6GhRsx0GlMZOT4IJXdKWfQU66Ldt0dNft8FShgI0ufD13esgje13IRUmOCdaw61Y5R5u-f7A15QZV0tTRRiUDM0HZOxhj0_jPcUcyMH-Xrykx62dQ6jZykgdg4rkTTmHreVdWBxaXJnm6Q1toFt4ggsE_zgZbcNtwoCSsgr8vc943LpxzRnJv5gARIMazb7AVzkKHn_9RrszH631ofqqLxJNFTZNCn8mi85KrUCn_qVZIP-yiaClt7wyXfXUWb8mlFGmTd27WTRCw_YzQuMPEtPgQWxSbV29sw3vtzC5or
+HEF4081B,I1_11_6,47,,https://assets.nexperia.com/documents/data-sheet/HEF4081B.pdf
+DG201BDJ = DG201A,I1_11_7,26,,https://www.vishay.com/docs/70037/dg201b.pdf
+DM74241N,I1_12_1,18,,…
+4029,I1_12_1,22,,https://www.ti.com/lit/ds/symlink/cd4029b-mil.pdf?ts=1751218501897&ref_url=https%253A%252F%252Fwww.google.com%252F
+SN74LS245 = SN74HCT245N,I1_12_2,38,,https://www.ti.com/lit/ds/symlink/sn74ls245.pdf?ts=1751183174024&ref_url=https%253A%252F%252Fwww.google.com%252F
+74HC573 = 74ALS573,I1_12_3,33,,https://www.ti.com/lit/ds/symlink/sn54hct245.pdf?ts=1751264403062&ref_url=https%253A%252F%252Fwww.mouser.in%252F
+HCF4040,I1_12_3,7,,https://www.rxelectronics.com.ua/datasheet/f5/HCF4040M013TR.pdf
+74LS244 = 74HC244,I1_12_4,29,,https://www.ti.com/lit/ds/symlink/sn74s244.pdf
+MC74LS273,I1_12_5,21,,https://www.thegeekpub.com/wp-content/uploads/2024/02/74ls273-datasheet.pdf?srsltid=AfmBOorSgeysG8ww81ABV-0Y74pHjYKyYqseG7OB6tTUnYGzTqeVOTa3
+MC1723CL,I1_12_5,0,,https://bg-electronics.de/datenblaetter/Schaltkreise/MC1723CL.pdf
+MC1458,I1_12_5,25,,https://www.ti.com/lit/ds/symlink/mc1458.pdf?ts=1751262703196&ref_url=https%253A%252F%252Fwww.google.com%252F
+ULN2803,I1_12_6,33,,https://www.st.com/resource/en/datasheet/uln2801a.pdf
+SN74LS374,I1_12_7,2,,https://www.ti.com/lit/ds/symlink/sn54ls373-sp.pdf?ts=1751203282939&ref_url=https%253A%252F%252Fwww.google.com%252F
+LM339,I1_12_7,24,,https://www.ti.com/lit/ds/symlink/lm339-n.pdf
